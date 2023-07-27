@@ -1,0 +1,63 @@
+{% extends "index.html" %}
+
+      {% block content %}
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 text-dark" style="background-color: rgb(230, 230, 230);">
+      
+    <div class="container" style="width: 100%;display: flex;justify-content: center;height: 600px;align-items: center;">
+
+        <div class="card" style="width: 55%;margin-top: 70px;">
+            <div class="card-body">
+                <img src="{{ url_for('static', filename = 'images/logo (1).png') }}" alt="" height="50px" width="80px" class="text-center mt-1 mb-1" style="margin-left:  250px;">
+
+
+
+                <p class="text-danger fw-bold">{{ msg }}</p>
+                <form action="#" class="form" method="post">
+                    <div class="row">
+                        <div class="col-6">
+                    
+                    <label> student Name : </label><br>
+                    <input type="text" name="sname" class="form-control" placeholder="Enter student name..." value="{{ list[1] }}"><br>
+                    <label> student Email : </label><br>
+                    <input type="text" name="semail" class="form-control" placeholder="Enter student email..." value="{{ list[2] }}">
+                    <br>
+                    <label> branch: </label><br>
+                    <input type="text" name="sbranch" class="form-control" placeholder="Enter student branch..." value="{{ list[8] }}">
+                    <br>
+                    <label>phone number:</label><br>
+                    <input type="text" name="sphone" class="form-control" placeholder="Enter student phone..." value="{{ list[3] }}"><br>
+                    <label> gender : </label><br>
+                    <input type="text" name="sgender" class="form-control" placeholder="Enter gender...." value="{{ list[4] }}"><br>
+                  </div>
+                  <div class="col-6">
+                    <label> year : </label><br>
+                    <input type="text" name="syear" class="form-control" placeholder="Enter student year..." value="{{ list[5] }}"><br>
+                    <label> semister : </label><br>
+                    <input type="text" name="ssem" class="form-control" placeholder="Enter student semister..." value="{{ list[6] }}">
+                    <br>
+                    <label> attendance : </label><br>
+                    <input type="text" name="spercentage" class="form-control" placeholder="Enter student semister..." value="{{ list[9] }}">
+                    <br>
+                    <label>section :</label><br>
+                    <input type="text" name="ssection" class="form-control" placeholder="Enter student section..." value="{{ list[7] }}"><br>
+                  </div>
+                </div>
+                
+                <div style="display: flex;justify-content: center;"><input type="submit" class="btn btn-danger mb-3" value="Update"></input></div>
+              </form>
+            </div>
+
+            </div>
+        </div>
+
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</main>
+{% endblock %}
+</body>
+</html>

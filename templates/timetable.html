@@ -1,0 +1,109 @@
+{% extends "index.html" %}
+{% block content%}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 text-dark">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Faculty Timetable</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			text-align: center;
+		}
+		th {
+			background-color: #d1d1e0;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="text-center" style="font-size: 30px;">Time Table</h1>
+	<table class="" style="margin-top: 100px;margin-left: 120px;">
+		<thead>
+			<tr>
+				<th>Days/Periods</th>
+				<th> 1</th>
+				<th> 2</th>
+				<th> 3</th>
+				<th> 4</th>
+				<th> 5</th>
+				<th> 6</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Monday</th>
+				<td>{{ a[0] }}</td>
+				<td> {{ a[1] }}</td>
+				<td>{{ a[2] }}</td>
+				<td>{{ a[3] }}</td>
+				<td>{{ a[4] }}</td>
+				<td>{{ a[5] }}</td>
+
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				<td>{{ b[0] }}</td>
+				<td>{{ b[1] }}</td>
+				<td>{{ b[2] }}</td>
+				<td>{{ b[3] }}</td>
+				<td>{{ b[4] }}</td>
+				<td>{{ b[5] }}</td>
+
+			</tr>
+			<tr>
+				<th>Wednesday</th>
+				<td>{{ c[0] }}</td>
+				<td>{{ c[1] }}</td>
+				<td>{{ c[2] }}</td>
+				<td>{{ c[3] }}</td>
+				<td>{{ c[4] }}</td>
+				<td>{{ c[5] }}</td>
+
+			</tr>
+			<tr>
+				<th>Thursday</th>
+				<td>{{ d[0] }}</td>
+				<td>{{ d[1] }}</td>
+				<td>{{ d[2] }}</td>
+				<td>{{ d[3] }}</td>
+				<td>{{ d[4] }}</td>
+				<td>{{ d[5] }}</td>
+
+			</tr>
+			<tr>
+				<th>Friday</th>
+				<td>{{ e[0] }}</td>
+				<td>{{ e[1] }}</td>
+				<td>{{ e[2] }}</td>
+				<td>{{ e[3] }}</td>
+				<td>{{ e[4] }}</td>
+				<td>{{ e[5] }}</td>
+
+			</tr>
+			<tr>
+				<th>Saturday</th>
+				<td>{{ f[0] }}</td>
+				<td>{{ f[1] }}</td>
+				<td>{{ f[2] }}</td>
+				<td>{{ f[3] }}</td>
+				<td>{{ f[4] }}</td>
+				<td>{{ f[5] }}</td>
+
+			</tr>
+		</tbody>
+	</table>
+	<a href="/inputtable"><button class="btn btn-info mt-4" style="margin-left: 50%;color: rgb(253, 251, 251); text-decoration: None;">Update</button></a>
+
+</main>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,106 @@
+{% extends "index.html" %}
+{% block content%}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 text-dark">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Faculty Timetable</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 9px;
+			text-align: center;
+		}
+		th {
+			background-color: #d1d1e0;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 class="text-center" style="font-size: 30px;">Set Your Time table </h1>
+	<h1 style="color: red;font-size: 20px;" class="">{{ msg }}</h1>
+	<form action="#" method="post">
+		<table class="small" style="margin-top: 100px;margin-left: 40px;">
+			<tr>
+				<th>Days/Periods</th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+        <th>6</th>
+			</tr>
+			<tr>
+				<th>Monday</th>
+				<td><input type="text" name="a1" required></td>
+				<td><input type="text" name="a2" required></td>
+				<td><input type="text" name="a3" required></td>
+				<td><input type="text" name="a4" required></td>
+				<td><input type="text" name="a5" required></td>
+        <td><input type="text" name="a6" required></td>
+
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				<td><input type="text" name="b1" required></td>
+				<td><input type="text" name="b2" required></td>
+				<td><input type="text" name="b3" required></td>
+				<td><input type="text" name="b4" required></td>
+				<td><input type="text" name="b5" required></td>
+        <td><input type="text" name="b6" required></td>
+
+			</tr>
+			<tr>
+				<th>Wednesday</th>
+				<td><input type="text" name="c1" required></td>
+				<td><input type="text" name="c2" required></td>
+				<td><input type="text" name="c3" required></td>
+				<td><input type="text" name="c4" required></td>
+				<td><input type="text" name="c5" required></td>
+        <td><input type="text" name="c6" required></td>
+
+			</tr>
+			<tr>
+				<th>Thursday</th>
+				<td><input type="text" name="d1" required></td>
+				<td><input type="text" name="d2" required></td>
+				<td><input type="text" name="d3" required></td>
+				<td><input type="text" name="d4" required></td>
+				<td><input type="text" name="d5" required></td>
+        <td><input type="text" name="d6" required></td>
+
+			</tr>
+			<tr>
+				<th>Friday</th>
+				<td><input type="text" name="e1" required></td>
+				<td><input type="text" name="e2" required></td>
+				<td><input type="text" name="e3" required></td>
+				<td><input type="text" name="e4" required></td>
+				<td><input type="text" name="e5" required></td>
+        <td><input type="text" name="e6" required></td>
+
+			</tr>
+      <tr>
+				<th>Saturday</th>
+				<td><input type="text" name="f1" required></td>
+				<td><input type="text" name="f2" required></td>
+				<td><input type="text" name="f3" required></td>
+				<td><input type="text" name="f4" required></td>
+				<td><input type="text" name="f5" required></td>
+        <td><input type="text" name="f6" required></td>
+
+			</tr>
+
+		</table>
+		<br>
+		<input type="submit" value="Submit" class="btn btn-info" style="margin-left: 50%;">
+	</form>
+	</main>
+	{% endblock %}
+</body>
+</html>
